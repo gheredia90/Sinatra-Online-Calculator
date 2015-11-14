@@ -1,0 +1,21 @@
+<head>
+  <title>Result | Online Calculator</title>
+</head>
+
+<body>
+  <h1>Result</h1>
+  <p>
+  	<%=@operation%> (<%=@first%>, <%=@second%>) = <%=@result%>
+  </p>
+
+  <form action="/store" method="POST">
+
+  	<% result = @result.to_s %>
+
+  	<button type="submit" name="store" value=<%=@result%>>Store result</button>
+
+  </form>	
+
+</body>
+
+</html>
